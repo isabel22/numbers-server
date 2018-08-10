@@ -1,4 +1,4 @@
-# NumberService
+# NumberService ![Build Status](https://travis-ci.com/isabel22/numbers-server.svg?branch=master)
 Web service that returns all the numbers from 1 to the user's choice as a JSON array.
 
 * Ruby version
