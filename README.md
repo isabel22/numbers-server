@@ -16,7 +16,7 @@ Web service that returns all the numbers from 1 to the user's choice as a JSON a
 - [GET /numbers/[:number]]
 
 ### GET /numbers/[:number]
-Example: <url>
+Example: https://serene-meadow-78539.herokuapp.com/numbers/12
 
 Response body:
 ```
