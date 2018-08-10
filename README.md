@@ -5,13 +5,15 @@ Web service that returns all the numbers from 1 to the user's choice as a JSON a
   > 2.4.0
 
 * Deployment instructions
-  1. `bundle install`
+  - `bundle install`
+  - `rails s`
+  - Visit `localhost:3000/numbers/[:number]
 
 * To run the tests, just run
-  > `rspec`
+  > `bundle exec rspec`
 
 ## API Resource
-- [GET /numbers/[id]]
+- [GET /numbers/[:number]]
 
 ### GET /numbers
 Example: <url>
