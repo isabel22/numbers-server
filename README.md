@@ -6,11 +6,11 @@ Web service that returns all the numbers from 1 to the user's choice as a JSON a
 
 * Deployment instructions
   - `bundle install`
-  - `rails s`
+  - `bundle exec rails s`
   - Visit `localhost:3000/numbers/[:number]
 
 * To run the tests, just run
-  > `bundle exec rspec`
+  - `bundle exec rspec`
 
 ## API Resource
 - [GET /numbers/[:number]]
