@@ -15,11 +15,12 @@ Web service that returns all the numbers from 1 to the user's choice as a JSON a
 ## API Resource
 - [GET /numbers/[:number]]
 
-### GET /numbers
+### GET /numbers/[:number]
 Example: <url>
 
 Response body:
-```{
+```
+{
       "numbers": [
           1,
           2,
@@ -34,4 +35,5 @@ Response body:
           11,
           12
       ]
-  }```
+  }
+  ```
