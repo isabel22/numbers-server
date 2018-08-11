@@ -11,6 +11,27 @@ Web service that returns all the numbers from 1 to the user's choice as a JSON a
 
 * To run the tests, just run
   - `bundle exec rspec`
+  
+## Code explanation
+### Controller 
+[`app/controllers/numbers_controller.rb`]
+
+Renders the valid array only if we got a valid response from the method `serial` of `NumberService`, otherwise it renders nothing with status `400`.
+
+### Service 
+[`app/services/number_service.rb`]
+
+This service has two public methods and one private. The private method `valid_integer` validates if the number that we received is not a string and if it is smaller than the maximum Integer that Ruby can handle.
+
+The public method `serial` is the one that returns the array containing all the numbers from 1 to N. It will return the array only if the number is valid.
+
+The public method `as_json` gives a `Hash` format to the answer.
+
+### Specs 
+[`spec/controllers/numbers_controller_spec.rb`]
+[`spec/services/number_service_spec.rb`]
+
+Using rspec, this project is testing the possible calls to the controller and all the public methods of the service. This is also being tested by TravisCI. 
 
 ## API Resource
 - [GET /numbers/[:number]]
@@ -37,3 +58,4 @@ Response body:
       ]
   }
   ```
+
